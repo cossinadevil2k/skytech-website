@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 box-border p-0 font-poppins;
+  }
+  html {
+    @apply m-0 box-border appearance-none scroll-smooth bg-main bg-cover bg-fixed bg-center p-0 text-white focus:outline-none;
+  }
+  body {
+    @apply min-h-screen;
+  }
+}
+
+* {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  @apply appearance-none;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+button {
+  @apply select-none font-poppins text-base whitespace-nowrap;
+}
+img {
+  @apply pointer-events-none select-none;
+}
+.container {
+  @apply md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+}
