@@ -35,15 +35,15 @@ const EchosystemSection: React.FC = () => {
             />
             <EcoSystemCard
               title="Low transaction cost"
-              description="With blockchain technology in the Paipot platform, users can quickly get paid for their services without having to go through strict or delayed payment procedures with low costs."
+              description="With blockchain technology in the SkyTech platform, users can quickly get paid for their services without having to go through strict or delayed payment procedures with low costs."
             />
             <EcoSystemCard
               title="Anti-cheating"
-              description="With the integration of blockchain technology into the platform, every data on Paipot will be stored on the blockchain which is immutable and falsify-proof as no one can tamper with them."
+              description="With the integration of blockchain technology into the platform, every data on SkyTech will be stored on the blockchain which is immutable and falsify-proof as no one can tamper with them."
             />
             <EcoSystemCard
               title="Reliable and secure  "
-              description="Buyers in the Paipot ecosystem can safely rely on the platform to provide credible, genuine, and professional service providers who will offer them premium services."
+              description="Buyers in the SkyTech ecosystem can safely rely on the platform to provide credible, genuine, and professional service providers who will offer them premium services."
             />
           </div>
         </div>

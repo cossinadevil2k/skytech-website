@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
               THE TOKEN SELLING
             </p>
             <p className="text-[1.2rem] font-light leading-[1.45rem] sm:text-2xl sm:leading-8">
-              19,000,000 PAI
+              19,000,000 SKY
             </p>
           </div>
         </div>
