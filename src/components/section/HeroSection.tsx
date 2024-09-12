@@ -11,10 +11,9 @@ const Button = (label: string) => {
   );
 };
 
-
 const HeroSection: React.FC = () => {
   return (
-    <div id="hero" className="flex flex-col gap-10">
+    <div id="home" className="flex flex-col gap-10">
       <div className="flex flex-col-reverse items-center justify-center text-center sm:flex-row sm:justify-between">
         <div className="flex flex-col items-center justify-center gap-4 sm:w-2/5 sm:items-start sm:text-left">
           <h1 className="text-2xl font-medium leading-9 sm:text-[1.75rem]">

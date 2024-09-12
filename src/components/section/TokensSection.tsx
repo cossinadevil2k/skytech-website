@@ -1,6 +1,6 @@
 import GradientText from "@components/ui/GradientText";
 import PieChart from "@components/ui/PieChart";
-import TokenCard from "@components/ui/TokenCard";
+import { TokenCard, TokenCard2 } from "@components/ui/TokenCard";
 import React, { useState } from "react";
 
 const TokensSection: React.FC = () => {
@@ -29,6 +29,15 @@ const TokensSection: React.FC = () => {
       label: "Network growth Fund",
       sublabel: "36 months lockup",
     },
+  ];
+
+  const tokens = [
+    { label: "Token name", value: "Skytech", color: "purple" },
+    { label: "Token Symbol", value: "SKY", color: "blue" },
+    { label: "Blockchain", value: "BNB", color: "green" },
+    { label: "Token Standard", value: "BEP20", color: "yellow" },
+    { label: "Token type", value: "Utility", color: "red" },
+    { label: "Max Supply", value: "1,000,000,000 SKY", color: "orange" },
   ];
 
   const handleCardHover = (id: string | null) => {
@@ -61,6 +70,16 @@ const TokensSection: React.FC = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="grid w-full grid-cols-2 sm:grid-cols-4 sm:gap-4">
+        {tokens.map((token) => (
+          <TokenCard2
+            key={token.label}
+            label={token.label}
+            value={token.value}
+            color={token.color}
+          />
+        ))}
       </div>
     </section>
   );

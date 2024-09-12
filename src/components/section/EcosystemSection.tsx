@@ -17,7 +17,6 @@ const EcoSystemCard: React.FC<{ title: string; description: string }> = ({
 const EchosystemSection: React.FC = () => {
   return (
     <section id="ecosystems" className="py-12">
-
       <GradientText text="Ecosystem" className="my-12 sm:my-24" />
       <div className="flex flex-col items-center justify-center gap-10 sm:flex-row">
         <img src={EcosystemImage} alt="Ecosystem" className="w-full sm:w-1/2" />

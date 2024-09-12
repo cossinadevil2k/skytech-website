@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Default: React.FC = () => {
-    return (
-        <>
-
-        </>
-    );
-}
+  return <></>;
+};
 
 export default Default;

@@ -35,7 +35,11 @@ const calculatePieData = (slices: Slice[]) => {
   });
 };
 
-const PieChart: React.FC<PieChartProps> = ({ slices, className, highlightedSliceId }) => {
+const PieChart: React.FC<PieChartProps> = ({
+  slices,
+  className,
+  highlightedSliceId,
+}) => {
   const [hoveredSlice, setHoveredSlice] = useState<Slice | null>(null);
   const [tooltipPosition, setTooltipPosition] = useState<{
     x: number;
@@ -54,7 +58,8 @@ const PieChart: React.FC<PieChartProps> = ({ slices, className, highlightedSlice
     });
   };
 
-  const activeSlice = hoveredSlice || pieData.find(slice => slice.id === highlightedSliceId);
+  const activeSlice =
+    hoveredSlice || pieData.find((slice) => slice.id === highlightedSliceId);
 
   return (
     <div className={`relative ${className}`} onMouseMove={handleMouseMove}>
@@ -67,8 +72,8 @@ const PieChart: React.FC<PieChartProps> = ({ slices, className, highlightedSlice
             onMouseLeave={() => setHoveredSlice(null)}
             className={`stroke-gray-900 stroke-1 transition-all delay-75 duration-300 ${
               slice.id === highlightedSliceId || slice === hoveredSlice
-                ? 'fill-blue-500'
-                : 'fill-blue-950 hover:fill-blue-500'
+                ? "fill-blue-500"
+                : "fill-blue-950 hover:fill-blue-500"
             }`}
           />
         ))}
@@ -81,7 +86,9 @@ const PieChart: React.FC<PieChartProps> = ({ slices, className, highlightedSlice
             left: tooltipPosition.x,
           }}
         >
-          <p>{activeSlice.label}: {activeSlice.value}%</p>
+          <p>
+            {activeSlice.label}: {activeSlice.value}%
+          </p>
         </div>
       )}
     </div>

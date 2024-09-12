@@ -30,7 +30,7 @@ const MoveToTop: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 rounded-full bg-blue-500 p-3 text-white shadow-lg transition-all duration-300 z-50 ease-in-out hover:bg-blue-600"
+          className="fixed bottom-5 right-5 z-50 rounded-full bg-blue-500 p-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:bg-blue-600"
           aria-label="Move to top"
         >
           <IconArrowUp size={24} />

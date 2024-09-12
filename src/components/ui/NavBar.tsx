@@ -59,8 +59,6 @@ const NavBar: React.FC = () => {
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    console.log(element);
-    console.log(sectionId);
     if (element) {
       const navbarHeight = 80;
       const elementPosition = element.getBoundingClientRect().top;
@@ -78,7 +76,11 @@ const NavBar: React.FC = () => {
     <nav>
       {isMobile ? (
         <div
-          className={`flex items-center justify-between px-5 py-3 shadow-md ${isScrolled ? "fixed left-0 right-0 top-0 z-10 bg-blue-950 bg-opacity-30 backdrop-blur-sm" : "sticky left-0 right-0 top-0 z-10 bg-transparent"}`}
+          className={`flex items-center justify-between px-5 py-3 shadow-md transition-all delay-75 duration-300 ease-in-out ${
+            isScrolled
+              ? "fixed left-0 right-0 top-0 z-10 bg-blue-950 bg-opacity-30 backdrop-blur-sm"
+              : "sticky left-0 right-0 top-0 z-10 bg-transparent"
+          }`}
         >
           <button>
             <img src={Logo} alt="logo" className="h-[36px]" />
@@ -97,7 +99,7 @@ const NavBar: React.FC = () => {
           >
             <MenuItem
               label="Home"
-              sectionId="hero"
+              sectionId="home"
               device="mobile"
               scrollToSection={scrollToSection}
             />
@@ -133,7 +135,11 @@ const NavBar: React.FC = () => {
         </div>
       ) : (
         <div
-          className={`flex items-center py-5 justify-between ${isScrolled ? "fixed left-0 right-0 top-0 z-10 bg-blue-950 bg-opacity-30 backdrop-blur-sm" : "sticky left-0 right-0 top-0 z-10 bg-transparent"}`}
+          className={`flex items-center justify-between py-5 transition-all delay-75 duration-300 ease-in-out ${
+            isScrolled
+              ? "fixed left-0 right-0 top-0 z-10 bg-blue-950 bg-opacity-30 backdrop-blur-sm"
+              : "sticky left-0 right-0 top-0 z-10 bg-transparent"
+          }`}
         >
           <div className="container mx-auto flex w-full items-center justify-between px-5">
             <button>
