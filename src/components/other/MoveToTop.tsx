@@ -1,4 +1,4 @@
-import { IconArrowUp } from "@tabler/icons-react";
+import { ArrowUp } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 const MoveToTop: React.FC = () => {
@@ -33,7 +33,7 @@ const MoveToTop: React.FC = () => {
           className="fixed bottom-5 right-5 z-50 rounded-full bg-blue-500 p-3 text-white shadow-lg transition-all duration-300 ease-in-out hover:bg-blue-600"
           aria-label="Move to top"
         >
-          <IconArrowUp size={24} />
+          <ArrowUp size={24} />
         </button>
       )}
     </>
